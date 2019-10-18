@@ -36,12 +36,12 @@ public class Mario extends Sprite {
         // Get running animation frames and add them to marioRun Animation
         for(int i = 1; i < 4; i++)
             frames.add(new TextureRegion(getTexture(), i * 16, 0, 16, 16));
-        marioRun = new Animation(0.2f, frames);
+        marioRun = new Animation(0.1f, frames);
         frames.clear();
 
         for(int i = 4; i < 6; i++)
             frames.add(new TextureRegion(getTexture(), i * 16, 0, 16, 16));
-        marioJump = new Animation(0.2f, frames);
+        marioJump = new Animation(0.1f, frames);
 
         marioStand = new TextureRegion(getTexture(), 0, 0, 16, 16);
 
